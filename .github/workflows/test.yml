@@ -33,4 +33,3 @@ jobs:
           outputReportsFolder: reports/
           args: "--loglevel INFO"
           plugins: "jpgc-casutg"
-
