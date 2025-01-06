@@ -23,10 +23,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run JMeter Action on a test
-        uses: rbhadti94/apache-jmeter-action@v0.5.0
+      - name: Lint all YAML files in the directory
+        uses: ibiqlik/action-yamllint@master
+
+      - name: Run JMeter Action
+        uses: ./
         with:
-          testFilePath: test/load.jmx
+          testFilePath: test/test2.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
+          plugins: "jpgc-casutg"
+
+      - name: Run More Than One JMeter Action
+        uses: ./
+        with:
+          testFilePath: test/
           outputReportsFolder: reports/
           args: "--loglevel INFO"
 
