@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Lint all YAML files in the directory
-        uses: ibiqlik/action-yamllint@master
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
 
       - name: Run JMeter Action
         uses: ./
