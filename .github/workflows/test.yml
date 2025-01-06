@@ -24,10 +24,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Lint all YAML files in the directory
-        uses: rbhadti94/apache-jmeter-action@v0.7.0
+        uses: ibiqlik/action-yamllint@master
 
       - name: Run JMeter Action
-        uses: ./
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
           testFilePath: test/test2.jmx
           outputReportsFolder: reports/
@@ -35,7 +35,7 @@ jobs:
           plugins: "jpgc-casutg"
 
       - name: Run More Than One JMeter Action
-        uses: ./
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
           testFilePath: test/
           outputReportsFolder: reports/
