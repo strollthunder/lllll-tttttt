@@ -1,0 +1,36 @@
+name: Test JMeter Action
+
+on:
+  workflow_dispatch:
+    inputs:
+      total_threads:
+        description: "Total number of threads (users) for the test"
+        required: true
+        default: 1000
+      runners:
+        description: "Number of runners for distributed testing"
+        required: true
+        default: 5
+
+
+jobs:
+  jmeter-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        runner: [1, 2, 3, 4, 5]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run JMeter Action on a test
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
+        with:
+          testFilePath: test/load.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: jmeter-test-results
+          path: reports/
