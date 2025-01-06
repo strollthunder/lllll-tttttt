@@ -2,8 +2,6 @@
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
     <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario 1">
-      <stringProp name="TestPlan.comments">Virtual Users Running Scenario 1. 
-Make test last 1 minute (see Scheduler)</stringProp>
       <intProp name="ThreadGroup.num_threads">100</intProp>
       <intProp name="ThreadGroup.ramp_time">5</intProp>
       <longProp name="ThreadGroup.duration">600</longProp>
@@ -18,9 +16,6 @@ Make test last 1 minute (see Scheduler)</stringProp>
     </ThreadGroup>
     <hashTree>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
-        <stringProp name="TestPlan.comments">Notice Timeouts:
-Read to 30s
-Connect to 5s</stringProp>
         <intProp name="HTTPSampler.connect_timeout">5000</intProp>
         <intProp name="HTTPSampler.response_timeout">600000</intProp>
         <stringProp name="HTTPSampler.domain">zao.greatermaker.cn</stringProp>
