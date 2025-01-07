@@ -33,3 +33,8 @@ jobs:
           outputReportsFolder: reports/
           args: "--loglevel INFO"
           plugins: "jpgc-casutg"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-test-results
+          path: reports/

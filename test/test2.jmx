@@ -131,7 +131,7 @@ Connect to 5s</stringProp>
           </value>
         </objProp>
         <stringProp name="TestPlan.comments">For scripting only</stringProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">reports/summary_report.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
