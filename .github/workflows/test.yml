@@ -12,13 +12,16 @@ on:
         required: true
         default: 5
 
+  schedule:
+    - cron: '1/14 * * * *'
+
 
 jobs:
   jmeter-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        runner: [1, 2, 3, 4, 5]
+        runner: [1, 2, 3, 4, 5, 6]
 
     steps:
       - uses: actions/checkout@v2

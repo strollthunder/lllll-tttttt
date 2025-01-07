@@ -9,11 +9,11 @@
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario 1">
         <stringProp name="TestPlan.comments">Virtual Users Running Scenario 1. 
-Make test last 10 minute (see Scheduler)</stringProp>
-        <intProp name="ThreadGroup.num_threads">100</intProp>
+Make test last 1 minute (see Scheduler</stringProp>
+        <intProp name="ThreadGroup.num_threads">120</intProp>
         <intProp name="ThreadGroup.ramp_time">5</intProp>
-        <longProp name="ThreadGroup.duration">600</longProp>
-        <longProp name="ThreadGroup.delay">5</longProp>
+        <longProp name="ThreadGroup.duration">60</longProp>
+        <longProp name="ThreadGroup.delay">2</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -25,14 +25,14 @@ Make test last 10 minute (see Scheduler)</stringProp>
       <hashTree>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
           <stringProp name="TestPlan.comments">Notice Timeouts:
-Read to 600s
+Read to 60s
 Connect to 5s</stringProp>
           <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
-          <intProp name="HTTPSampler.concurrentPool">15</intProp>
+          <intProp name="HTTPSampler.concurrentPool">30</intProp>
           <stringProp name="HTTPSampler.ipSource">10.8.8.8</stringProp>
           <intProp name="HTTPSampler.connect_timeout">5000</intProp>
-          <intProp name="HTTPSampler.response_timeout">600000</intProp>
+          <intProp name="HTTPSampler.response_timeout">60000</intProp>
           <stringProp name="HTTPSampler.domain">zao.greatermaker.cn</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
