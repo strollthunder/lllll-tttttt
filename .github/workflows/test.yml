@@ -24,6 +24,11 @@ jobs:
         runner: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
     steps:
+      - name: Increase system limits
+        run: |
+          sudo sysctl -w net.ipv4.ip_local_port_range="1024 65535"
+          sudo sysctl -w net.ipv4.tcp_fin_timeout=30
+          sudo sysctl -w net.core.somaxconn=65535
       - uses: actions/checkout@v2
 
       - name: Lint all YAML files in the directory
