@@ -36,7 +36,7 @@ jobs:
 
       - name: Run JMeter Action
         env:
-          JVM_ARGS: "-Xmx2048m"
+          JVM_ARGS: "-Xmx4090m"
         uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
           testFilePath: test/test2.jmx
