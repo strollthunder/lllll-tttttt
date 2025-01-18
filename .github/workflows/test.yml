@@ -31,6 +31,7 @@ jobs:
           sudo sysctl -w net.ipv4.ip_local_port_range="1024 65535"
           sudo sysctl -w net.ipv4.tcp_fin_timeout=30
           sudo sysctl -w net.core.somaxconn=65535
+          sudo echo "zao.greatermaker.cn 101.34.119.232" >>/etc/hosts
       - uses: actions/checkout@v2
 
       - name: Lint all YAML files in the directory
