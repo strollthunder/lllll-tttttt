@@ -36,6 +36,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y dnsmasq
           echo "address=/zao.greatermaker.cn/101.34.119.232" | sudo tee -a /etc/dnsmasq.conf
+          echo "address=/zao-api.greatermaker.cn/101.34.119.232" | sudo tee -a /etc/dnsmasq.conf
           # echo "no-resolv" | sudo tee -a /etc/dnsmasq.conf
           echo "server=8.8.8.8" | sudo tee -a /etc/dnsmasq.conf
           cat /etc/dnsmasq.conf
