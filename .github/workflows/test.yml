@@ -32,6 +32,8 @@ jobs:
           sudo sysctl -w net.ipv4.tcp_fin_timeout=30
           sudo sysctl -w net.core.somaxconn=65535
           sudo echo "zao.greatermaker.cn 101.34.119.232" >>/etc/hosts
+          echo "101.34.119.232 zao.greatermaker.cn" | sudo tee -a /etc/hosts > /dev/null
+
       - uses: actions/checkout@v2
 
       - name: Lint all YAML files in the directory
