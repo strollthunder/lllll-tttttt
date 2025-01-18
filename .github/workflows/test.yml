@@ -32,7 +32,7 @@ jobs:
           sudo sysctl -w net.ipv4.tcp_fin_timeout=30
           sudo sysctl -w net.core.somaxconn=65535
           # sudo echo "zao.greatermaker.cn 101.34.119.232" >>/etc/hosts
-                - name: Install and Configure dnsmasq
+          #      - name: Install and Configure dnsmasq
           sudo apt-get update
           sudo apt-get install -y dnsmasq
           echo "address=/zao.greatermaker.cn/101.34.119.232" | sudo tee -a /etc/dnsmasq.conf
