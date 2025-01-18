@@ -48,7 +48,6 @@ jobs:
 
       - name: Use dnsmasq
         run: |
-          cp /etc/resolv.conf /etc/resolv.conf.bak
           echo "nameserver 127.0.0.1" | sudo tee /etc/resolv.conf
 
       - name: Run JMeter Action
