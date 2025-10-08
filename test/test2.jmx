@@ -34,10 +34,10 @@ Connect to 5s</stringProp>
           <intProp name="HTTPSampler.concurrentPool">30</intProp>
           <intProp name="HTTPSampler.connect_timeout">5000</intProp>
           <intProp name="HTTPSampler.response_timeout">60000</intProp>
-          <stringProp name="HTTPSampler.domain">zao.greatermaker.cn</stringProp>
+          <stringProp name="HTTPSampler.domain">d3lyvwtljhwoqp.cloudfront.net</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.path">/3m7tg4vh</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -75,9 +75,9 @@ Connect to 5s</stringProp>
           <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <intProp name="HTTPSampler.concurrentPool">100</intProp>
-          <stringProp name="HTTPSampler.domain">zao.greatermaker.cn</stringProp>
+          <stringProp name="HTTPSampler.domain">d3lyvwtljhwoqp.cloudfront.net</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.path">/3m7tg4vh</stringProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -99,7 +99,7 @@ Connect to 5s</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="false">
           <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <intProp name="HTTPSampler.concurrentPool">100</intProp>
